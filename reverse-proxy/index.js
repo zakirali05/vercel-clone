@@ -40,30 +40,6 @@ app.get("/", (req, res) => {
 });
 
 app.post("/upload", upload.single("fileData"), async (req, res) => {
-  // const folderName = await req.body.folderName;
-  // const filename = await req.file.originalname;
-  // console.log(req.body);
-  // const fileData = Buffer.from(req.body.fileData, "base64");
-  // const filePath = path.join(__dirname, "uploads", folderName, filename);
-  // // Ensure folder exists
-  // await fs.access(path.dirname(filePath), fs.constants.F_OK); // Check base directory
-  // await fs.access(
-  //   filePath,
-  //   fs.constants.F_OK | fs.constants.R_OK | fs.constants.W_OK
-  // ); // Check specific file (optional)
-  // // Create folder if it doesn't exist
-  // if (!(await fs.exists(path.dirname(filePath)))) {
-  //   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  // }
-  // fs.writeFile(filepath, fileData, (err) => {
-  //   if (err) {
-  //     console.error("Error saving file:", err);
-  //     return res.json({ status: 500, message: err?.message });
-  //   } else {
-  //     console.log("File saved successfully:", filename);
-  //     return res.json({ status: 200, message: "File saved succesfully" });
-  //   }
-  // });
   return res.json({
     status: 200,
     message: "Deployed sucessfully",
