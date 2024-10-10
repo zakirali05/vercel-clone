@@ -1,0 +1,16 @@
+{
+  "name": "builder-server",
+  "version": "1.0.0",
+  "main": "script.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "unique-names-generator": "^4.7.1"
+  }
+}
