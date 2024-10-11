@@ -48,17 +48,6 @@ const init = async () => {
           length: 4,
         });
 
-        // const command = new PutObjectCommand({
-        //   Bucket: "vercel-clone-outputs",
-        //   Key: `__outputs/${PROJECT_ID}/${file}`,
-        //   Body: fs.createReadStream(filePath),
-        //   ContentType: mime.lookup(filePath),
-        // });
-
-        // await s3Client.send(command);
-        // publishLog(`uploaded ${file}`);
-        // console.log("uploaded", filePath);
-
         const result = await fetch("http://localhost:9001/upload", {
           folderName: RANDOM_FOLDER_NAME,
           fileData: file,
